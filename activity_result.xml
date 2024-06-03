@@ -17,31 +17,47 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Find Yourself!"
-        tools:ignore="MissingConstraints" />
+        app:title="Find Yourself!" />
 
     <TextView
         android:id="@+id/ResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="10dp"
-        android:text="asd"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/MBTIText"
-        app:layout_constraintEnd_toEndOf="@+id/MBTIText"
+        android:layout_marginTop="80dp"
+        android:text="당신의 게임 속 직업은?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/MBTIText"
+        android:id="@+id/JobText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="278dp"
-        android:text="TextView"
+        android:layout_marginTop="4dp"
+        android:text="MBTI Type"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultText"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="383dp"
+        android:layout_height="422dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="MBTI Image"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JobText"
+        app:layout_constraintVertical_bias="0.19"
         tools:ignore="MissingConstraints" />
 
 
